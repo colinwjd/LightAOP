@@ -1,7 +1,7 @@
 /**
  * 
  */
-package colin.aop;
+package colin.aop.handler;
 
 import java.lang.reflect.Method;
 

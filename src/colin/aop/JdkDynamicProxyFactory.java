@@ -3,6 +3,8 @@ package colin.aop;
 import java.lang.reflect.Proxy;
 import java.util.List;
 
+import colin.aop.handler.AbstractHandler;
+
 /**
  * 
  * @author Colin Wang

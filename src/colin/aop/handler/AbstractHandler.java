@@ -1,7 +1,7 @@
 /**
  * 
  */
-package colin.aop;
+package colin.aop.handler;
 
 import java.lang.reflect.InvocationHandler;
 
@@ -14,7 +14,7 @@ public abstract class AbstractHandler implements InvocationHandler {
 
 	private Object target;
 
-	protected void setTarget(Object target) {
+	public void setTarget(Object target) {
 		this.target = target;
 	}
 

@@ -28,15 +28,13 @@ public class Client {
 		handlers.add(before);
 		handlers.add(after);
 
-		List<String> names = new ArrayList<>();
-		names.add("Colin");
-		names.add("Tony");
-		names.add("Amy");
+		Sort sort = new HeapSort();
 
-		AopProxy aopProxy = new JdkDynamicProxyFactory(names, handlers);
-		List<String> proxy = (List<String>) aopProxy.getProxy();
-		proxy.add("haha");
-		proxy.clear();
+		AopProxy aopProxy = new JdkDynamicProxyFactory(sort, handlers);
+		Sort sortProxy = (Sort) aopProxy.getProxy();
+		Integer[] a = new Integer[] {10,13,6,5,1,9,12,42,14,6};
+		sortProxy.sort(a);
+		SortUtil.show(a);
 	}
 
 }

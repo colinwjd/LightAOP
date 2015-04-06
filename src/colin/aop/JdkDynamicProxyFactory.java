@@ -3,6 +3,11 @@ package colin.aop;
 import java.lang.reflect.Proxy;
 import java.util.List;
 
+/**
+ * 
+ * @author Colin Wang
+ * @date Apr 6, 2015
+ */
 public class JdkDynamicProxyFactory implements AopProxy {
 
 	private Object target;
